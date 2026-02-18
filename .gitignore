@@ -1,0 +1,42 @@
+
+# ========================
+# Environment Variables
+# ========================
+.env
+
+# ========================
+# Python Cache
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+
+# ========================
+# Virtual Environment
+# ========================
+venv/
+.env/
+
+# ========================
+# RAG / Vector Database (CRITICAL)
+# ========================
+data/vector_store/
+data/document_metadata.json
+chroma_db/
+
+# ========================
+# OS Files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Jupyter (if any)
+# ========================
+.ipynb_checkpoints/
+
+# ========================
+# Logs & Metrics (optional)
+# ========================
+*.log
+query_metrics.json

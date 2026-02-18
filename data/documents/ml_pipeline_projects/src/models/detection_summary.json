@@ -1,0 +1,36 @@
+{
+  "summaries": {
+    "daily_revenue": {
+      "metric": "daily_revenue",
+      "total_observations": 120,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 2.5,
+      "severity_breakdown": {
+        "normal": 116,
+        "mild": 1,
+        "moderate": 0,
+        "severe": 3
+      },
+      "avg_confidence": 2.17,
+      "detection_date": "2026-02-09T20:08:27.444551"
+    },
+    "transaction_count": {
+      "metric": "transaction_count",
+      "total_observations": 120,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 2.5,
+      "severity_breakdown": {
+        "normal": 116,
+        "mild": 1,
+        "moderate": 0,
+        "severe": 3
+      },
+      "avg_confidence": 2.17,
+      "detection_date": "2026-02-09T20:08:27.480937"
+    }
+  },
+  "anomaly_count_by_metric": {
+    "daily_revenue": 3,
+    "transaction_count": 3
+  }
+}

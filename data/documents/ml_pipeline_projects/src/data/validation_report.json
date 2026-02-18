@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-02-09T18:23:43.631952",
+  "checks": {
+    "schema": {
+      "passed": true,
+      "total_columns": 4
+    },
+    "missing_dates": {
+      "passed": true,
+      "count": 0
+    },
+    "revenue": {
+      "passed": false,
+      "negative_count": 1,
+      "null_count": 0,
+      "zero_count": 0,
+      "min": -1000.0,
+      "max": 49825.09234920518,
+      "mean": 28286.472963027874,
+      "issues": [
+        "negative_values: 1"
+      ]
+    },
+    "payment_counts": {
+      "passed": true,
+      "issues": [],
+      "avg_success_rate": 90.40807632802476,
+      "total_failed": 940,
+      "total_successful": 9453
+    },
+    "missing_values": {
+      "passed": true,
+      "total_missing": 1,
+      "columns_affected": 1,
+      "details": {
+        "successful_payments": {
+          "count": 1,
+          "percentage": 3.225806451612903
+        }
+      }
+    },
+    "data_types": {
+      "passed": true,
+      "issues": []
+    },
+    "duplicates": {
+      "passed": true,
+      "duplicate_dates": 0
+    },
+    "outliers": {
+      "passed": true,
+      "method": "IQR",
+      "threshold": 3.0,
+      "details": {}
+    },
+    "business_logic": {
+      "passed": false,
+      "issues": [
+        "low_correlation: -0.325"
+      ]
+    }
+  },
+  "warnings": [
+    "Low correlation between revenue and successful payments: -0.325"
+  ],
+  "errors": [
+    "Found 1 negative revenue values"
+  ],
+  "passed": false
+}

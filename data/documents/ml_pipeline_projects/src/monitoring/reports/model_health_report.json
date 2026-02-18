@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-02-10T06:45:50.723086",
+  "monitor_id": "business_anomaly_monitor",
+  "summary": {
+    "overall_status": "WARNING",
+    "status_color": "\ud83d\udfe1",
+    "alert_rate_percent": 0.0,
+    "drift_status": "NO_DRIFT",
+    "critical_issues": [],
+    "warnings": [
+      "alert_rate_health"
+    ],
+    "total_checks": 5,
+    "checks_passed": 4
+  },
+  "detailed_checks": {
+    "alert_rate_health": {
+      "check": "alert_rate_health",
+      "timestamp": "2026-02-10T06:45:50.719774",
+      "alert_rate_percent": 0.0,
+      "health_status": "TOO_LOW",
+      "trend": "STABLE",
+      "recommendation": "Model may be missing anomalies. Consider lowering threshold.",
+      "thresholds": {
+        "min": 1.0,
+        "max": 5.0
+      }
+    },
+    "score_distribution": {
+      "check": "score_distribution",
+      "timestamp": "2026-02-10T06:45:50.721943",
+      "distribution": {
+        "mean": 24.584543687092424,
+        "std": 8.511531068721355,
+        "skewness": -0.12827301015152845,
+        "kurtosis": -1.3518838366178056,
+        "q1": 19.54248465613614,
+        "median": 24.16644775485848,
+        "q3": 31.87920019568577
+      },
+      "compression_status": "MODERATE_COMPRESSION",
+      "score_range": 24.709631768709087
+    },
+    "prediction_drift": {
+      "check": "prediction_drift",
+      "timestamp": "2026-02-10T06:45:50.721943",
+      "drift_detected": "False",
+      "drift_status": "NO_DRIFT",
+      "severity": "LOW",
+      "score_shift_z": 0.381,
+      "anomaly_rate_change_pct": -100.0,
+      "recommendation": "Model behavior stable.",
+      "threshold": 2.5
+    },
+    "business_confidence": {
+      "check": "business_confidence",
+      "timestamp": "2026-02-10T06:45:50.723086",
+      "status": "NO_ANOMALIES_DETECTED",
+      "severity": "INFO"
+    },
+    "performance_trends": {
+      "check": "performance_trends",
+      "timestamp": "2026-02-10T06:45:50.723086",
+      "status": "INSUFFICIENT_HISTORY",
+      "history_size": 0
+    }
+  }
+}

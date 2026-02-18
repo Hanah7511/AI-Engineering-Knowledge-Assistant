@@ -1,0 +1,13 @@
+langchain
+langchain-community
+langchain-openai
+langchain-chroma
+chromadb
+openai
+tiktoken
+python-dotenv
+sentence-transformers
+jq
+streamlit
+pandas
+numpy

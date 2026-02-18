@@ -1,0 +1,100 @@
+{
+  "monitor_id": "business_kpi_monitor",
+  "timestamp": "2026-02-10T05:50:59.406990",
+  "summary": {
+    "overall_status": "WARNING",
+    "failed_checks": [],
+    "warning_checks": [
+      "volume_freshness",
+      "business_rules"
+    ],
+    "total_checks": 5,
+    "passed_checks": 3
+  },
+  "detailed_checks": {
+    "schema": {
+      "check": "schema_validation",
+      "timestamp": "2026-02-10T05:50:59.403254",
+      "valid": true,
+      "severity": "PASS",
+      "missing_columns": [],
+      "critical_missing": [],
+      "extra_columns": [],
+      "expected_columns": 4,
+      "actual_columns": 4
+    },
+    "completeness": {
+      "check": "data_completeness",
+      "timestamp": "2026-02-10T05:50:59.404306",
+      "severity": "PASS",
+      "total_missing_percent": 0.5,
+      "critical_missing": {},
+      "warning_missing": {},
+      "all_missing_percent": {
+        "metric_date": 0.0,
+        "daily_revenue": 2.0,
+        "transaction_count": 0.0,
+        "success_rate": 0.0
+      }
+    },
+    "volume_freshness": {
+      "check": "volume_freshness",
+      "timestamp": "2026-02-10T05:50:59.404306",
+      "volume_drop_percent": 0,
+      "volume_alert": false,
+      "reference_volume": 50,
+      "current_rows": 50,
+      "latest_timestamp": "2024-02-19T00:00:00",
+      "data_age_hours": 17333.85,
+      "is_stale": true,
+      "freshness_threshold_hours": 48,
+      "severity": "HIGH"
+    },
+    "statistical_drift": {
+      "check": "statistical_drift",
+      "timestamp": "2026-02-10T05:50:59.405354",
+      "severity": "PASS",
+      "drift_detected": [],
+      "metrics_checked": [
+        "daily_revenue",
+        "transaction_count"
+      ],
+      "detailed_results": {
+        "daily_revenue": {
+          "current_mean": 51631.56,
+          "reference_mean": 51631.56,
+          "percent_change": 0.0,
+          "z_score": 0.0,
+          "drift_detected": "False",
+          "threshold": 3.0
+        },
+        "transaction_count": {
+          "current_mean": 533.0,
+          "reference_mean": 533.0,
+          "percent_change": 0.0,
+          "z_score": 0.0,
+          "drift_detected": "False",
+          "threshold": 3.0
+        }
+      }
+    },
+    "business_rules": {
+      "check": "business_rules",
+      "timestamp": "2026-02-10T05:50:59.406351",
+      "severity": "HIGH",
+      "violations": [
+        {
+          "rule": "revenue_positive",
+          "violations": 1,
+          "description": "Revenue should not be negative"
+        }
+      ],
+      "rules_applied": [
+        "revenue_positive",
+        "success_rate_range",
+        "transaction_logic"
+      ]
+    }
+  },
+  "all_passed": false
+}
