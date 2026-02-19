@@ -46,6 +46,7 @@ Unlike basic chatbots, this system:
 
 ## 🏗️ System Architecture (Production Hybrid RAG)
 
+
 User Query (CLI - main.py)  
         ↓  
 EnhancedProductionRAG (Core Engine)  
@@ -100,6 +101,7 @@ Answer + Sources + Metrics + Cost + Confidence
 
 ## Project Structure
 
+```
 AI-Engineering-Knowledge-Assistant/
 │
 ├── .github/
@@ -137,7 +139,7 @@ AI-Engineering-Knowledge-Assistant/
 ├── requirements.txt # Project dependencies
 ├── README.md # Project documentation
 └── LICENSE # (Optional but recommended)
-
+```
 ---
 
 ## Tech Stack
