@@ -79,6 +79,12 @@ Answer + Sources + Metrics + Cost + Confidence
 
 ---
 
+## 🚀 Demo (CLI - Hybrid RAG in Action)
+
+![RAG CLI Demo](assets/rag-cli-demo.png)
+
+---
+
 ## 🔄 End-to-End RAG Pipeline Flow
 
 1. User asks a technical question via CLI  
