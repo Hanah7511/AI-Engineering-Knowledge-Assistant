@@ -1,13 +1,26 @@
-langchain
-langchain-community
-langchain-openai
-langchain-chroma
-chromadb
-openai
-tiktoken
-python-dotenv
-sentence-transformers
-jq
-streamlit
-pandas
-numpy
+# Core LLM + RAG
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-openai>=0.1.0
+langchain-chroma>=0.1.0
+
+# Vector Database
+chromadb>=0.5.0
+
+# LLM & Tokenization
+openai>=1.0.0
+tiktoken>=0.7.0
+
+# Embeddings
+sentence-transformers>=2.6.0
+
+# Environment & Utils
+python-dotenv>=1.0.0
+tenacity>=8.2.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Notebook ingestion (REQUIRED for your project)
+nbformat>=5.9.0
