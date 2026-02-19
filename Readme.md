@@ -103,35 +103,40 @@ Answer + Sources + Metrics + Cost + Confidence
 AI-Engineering-Knowledge-Assistant/
 │
 ├── .github/
-│   └── workflows/
-│       └── ci.yml                 # GitHub Actions CI/CD pipeline
+│ └── workflows/
+│ └── ci.yml # GitHub Actions CI/CD pipeline
+│
+├── assets/ # Demo screenshots (README images)
+│ ├── demo_1.png
+│ ├── demo_1.5.png
+│ ├── demo_2.png
+│ └── demo_2.2.png
 │
 ├── data/
-│   ├── documents/                 # Knowledge base (PDFs, MD, TXT, code files)
-│   ├── vector_store/              # Chroma vector database (auto-generated)
-│   └── query_cache.pkl            # Cached query results (auto-created)
+│ ├── documents/ # Knowledge base files (PDF, MD, TXT, code)
+│ ├── vector_store/ # Chroma vector DB (auto-generated)
+│ └── query_cache.pkl # Cached query results (auto-created)
 │
-├── exports/                       # Exported analytics (JSON/CSV)
+├── exports/ # Exported analytics (JSON/CSV)
 │
 ├── src/
-│   ├── ingestion/
-│   │   ├── __init__.py
-│   │   └── knowledge_base.py      # Document loading + embedding + vector DB
-│   │
-│   ├── rag/
-│   │   ├── __init__.py
-│   │   └── rag_pipeline.py        # Core EnhancedProductionRAG (main brain)
-│   │
-│   └── interface/
-│       ├── __init__.py
-│       └── main.py                # CLI entry point (interactive assistant)
+│ ├── ingestion/
+│ │ ├── init.py
+│ │ └── knowledge_base.py # Document loading + embeddings + vector DB
+│ │
+│ ├── rag/
+│ │ ├── init.py
+│ │ └── rag_pipeline.py # Core EnhancedProductionRAG (main engine)
+│ │
+│ └── interface/
+│ ├── init.py
+│ └── main.py # CLI entry point (interactive assistant)
 │
-├── .env                           # Environment variables (NOT pushed to GitHub)
-├── .gitignore                     # Ignore secrets, cache, vector DB
-├── requirements.txt               # Project dependencies
-├── README.md                      # Project documentation
-└── LICENSE                        # (Optional but recommended for GitHub)
-
+├── .env # Environment variables (NOT pushed to GitHub)
+├── .gitignore # Ignore secrets, cache, vector DB
+├── requirements.txt # Project dependencies
+├── README.md # Project documentation
+└── LICENSE # (Optional but recommended)
 
 ---
 
