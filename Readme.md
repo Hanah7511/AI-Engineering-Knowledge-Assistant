@@ -82,7 +82,10 @@ Answer + Sources + Metrics + Cost + Confidence
 
 ## 🚀 Demo (CLI - Hybrid RAG in Action)
 
-![RAG CLI Demo](assets/rag-cli-demo.png)
+![RAG CLI Demo](assets/demo_1.png)
+![RAG CLI Demo](assets/demo_1.5.png)
+![RAG CLI Demo](assets/demo_2.png)
+![RAG CLI Demo](assets/demo_2.2.png)
 
 ---
 
