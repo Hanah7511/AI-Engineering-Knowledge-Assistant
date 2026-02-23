@@ -1,9 +1,15 @@
 # 🎓 AI Engineering Knowledge Assistant
 
-Production-grade Hybrid Retrieval-Augmented Generation (RAG) system designed to answer technical questions from local documentation using grounded, source-aware responses.
+# AI Engineering Knowledge Assistant (Hybrid RAG)
 
-This project simulates a real-world internal AI assistant used in engineering teams, MLOps platforms, and technical knowledge bases.
+An LLM-powered internal AI assistant built using LangChain, OpenAI GPT-4o-mini, and ChromaDB to answer technical questions from documentation using Retrieval-Augmented Generation (RAG).
 
+This project simulates a real-world enterprise AI tool used for:
+- AI assistants and chatbots
+- Knowledge base automation
+- Engineering documentation Q&A
+- LLM-driven internal tools for business and technical teams
+  
 ---
 
 ## Overview
