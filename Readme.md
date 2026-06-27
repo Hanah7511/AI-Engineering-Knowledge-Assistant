@@ -225,5 +225,5 @@ Workflow location:
 ## Author
 
 Hana Al Haris
-Final Year AI/ML Student
+AI/ML Engineer
 Portfolio Project – AI Engineering & RAG Systems
